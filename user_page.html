@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة المستخدم - Spherely</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e9eff5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4267B2;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .main-container {
+      display: flex;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .left-sidebar {
+      width: 250px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .left-sidebar h3 {
+      text-align: center;
+    }
+    .left-sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .left-sidebar ul li {
+      margin: 15px 0;
+    }
+    .left-sidebar ul li a {
+      text-decoration: none;
+      color: #4267B2;
+      font-size: 16px;
+    }
+    .feed {
+      flex-grow: 1;
+      max-width: 800px;
+      margin-left: 20px;
+    }
+    .feed .post-box {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .feed .post-box textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    .feed .post-box button {
+      background-color: #4267B2;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .feed .post-box button:hover {
+      background-color: #365899;
+    }
+    .feed .post {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .feed .post .post-header {
+      display: flex;
+      align-items: center;
+    }
+    .feed .post .post-header img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+    .feed .post .post-header h3 {
+      font-size: 16px;
+      color: #4267B2;
+    }
+    .feed .post .post-header span {
+      font-size: 14px;
+      color: #757575;
+    }
+    .feed .post .post-content {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .feed .post .post-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .feed .post .post-footer .like, .feed .post .post-footer .comment {
+      font-size: 14px;
+      color: #4267B2;
+      cursor: pointer;
+    }
+    .feed .post .post-footer .like:hover, .feed .post .post-footer .comment:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    مرحبًا بك في صفحة المستخدم
+  </header>
+
+  <div class="main-container">
+    <!-- القائمة الجانبية -->
+    <div class="left-sidebar">
+      <h3>الصفحة الشخصية</h3>
+      <ul>
+        <li><a href="#">الصفحة الرئيسية</a></li>
+        <li><a href="#">الملف الشخصي</a></li>
+        <li><a href="#">الأصدقاء</a></li>
+        <li><a href="#">الإعدادات</a></li>
+      </ul>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="feed">
+      <!-- صندوق كتابة المنشور -->
+      <div class="post-box">
+        <textarea placeholder="ماذا يدور في بالك؟"></textarea>
+        <button>نشر</button>
+      </div>
+
+      <!-- منشور -->
+      <div class="post">
+        <div class="post-header">
+          <img src="https://via.placeholder.com/40" alt="صورة المستخدم">
+          <div>
+            <h3>اسم المستخدم</h3>
+            <span>منذ 10 دقائق</span>
+          </div>
+        </div>
+        <div class="post-content">
+          هذا هو محتوى المنشور.
+        </div>
+        <div class="post-footer">
+          <span class="like">أعجبني</span>
+          <span class="comment">تعليق</span>
+        </div>
+      </div>
+
+      <!-- منشور آخر -->
+      <div class="post">
+        <div class="post-header">
+          <img src="https://via.placeholder.com/40" alt="صورة المستخدم">
+          <div>
+            <h3>اسم المستخدم</h3>
+            <span>منذ ساعة</span>
+          </div>
+        </div>
+        <div class="post-content">
+          هذا هو منشور آخر.
+        </div>
+        <div class="post-footer">
+          <span class="like">أعجبني</span>
+          <span class="comment">تعليق</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body></html>
